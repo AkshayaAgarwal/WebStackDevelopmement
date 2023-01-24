@@ -1,0 +1,26 @@
+table {
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: none;
+}
+
+tr {
+    height: 1.5em;
+}
+
+td{
+    text-align: center;
+}
+
+thead {
+    color: whitesmoke;
+    background-color: black;
+}
+h1 {
+    text-align: center;
+}

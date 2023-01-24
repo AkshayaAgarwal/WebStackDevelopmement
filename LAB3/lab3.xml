@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="labss.xsl" type="text/xsl"?>
+<seller xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="labs.xsd">
+    <dealer>
+        <name>Yuckquee</name>
+        <city>Lucknow</city>
+        <address>Ganesh ganj</address>
+        <type>Diamond</type>
+        <sales>60</sales>
+        <ratings>4.8</ratings>
+        <category>Electronics</category>
+        <usp>Stickers</usp>
+    </dealer>
+    <dealer>
+        <name>Rinkon</name>
+        <city>Delhi</city>
+        <address>Rohini sec 13</address>
+        <type>Bronze</type>
+        <sales>10</sales>
+        <ratings>4.5</ratings>
+        <category>Vinyls</category>
+        <usp>Beverages</usp>
+    </dealer>
+    <dealer>
+        <name>Synaty</name>
+        <city>Jabalpur</city>
+        <address>Chowk</address>
+        <type>Wood</type>
+        <sales>5</sales>
+        <ratings>3.8</ratings>
+        <category>Clothings</category>
+        <usp>Anime designs</usp>
+    </dealer>
+    <dealer>
+        <name>Woopme</name>
+        <city>Hasanganj</city>
+        <address>Narahai </address>
+        <type>Silver</type>
+        <sales>20</sales>
+        <ratings>4.4</ratings>
+        <category>Fashion</category>
+        <usp>Hoodies</usp>
+    </dealer>
+    <dealer>
+        <name>Fire-Boltt</name>
+        <city>Mumbai</city>
+        <address>Tavereker</address>
+        <type>Gold</type>
+        <sales>40</sales>
+        <ratings>4.5</ratings>
+        <category>Electronics</category>
+        <usp>Smart Watches</usp>
+    </dealer>
+    <dealer>
+        <name>Boat</name>
+        <city>Kanpur</city>
+        <address>Ghatna ghar</address>
+        <type>Silver</type>
+        <sales>50</sales>
+        <ratings>4.4</ratings>
+        <category>Audio</category>
+        <usp>True Wireless Earbuds</usp>
+    </dealer>
+</seller>
