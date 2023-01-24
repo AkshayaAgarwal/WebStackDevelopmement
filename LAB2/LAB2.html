@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>LAB2</title>
+
+  <h2>Find Your Location in below Map</h2>
+        <button onclick="getlocation();"> Show Position</button>
+        <div id="demo" style="width: 800px; height: 600px; margin-left: 200px;"></div>
+
+        <script src="https://maps.google.com/maps/api/js?sensor=false"> </script>
+
+        <script type="text/javascript">
+        function getlocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPos, showErr);
+            }
+            else{
+                alert("Sorry! your Browser does not support Geolocation API")
+            }
+        }
+        //Showing Current Poistion on Google Map
+        function showPos(position){
+            latt = position.coords.latitude;
+            long = position.coords.longitude;
+            var lattlong = new google.maps.LatLng(latt, long);
+            var myOptions = {
+                center: lattlong,
+                zoom: 15,
+                mapTypeControl: true,
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL}
+            }
+            var maps = new google.maps.Map(document.getElementById("demo"), myOptions);
+            var markers =
+            new google.maps.Marker({position:lattlong, map:maps, title:"You are here!"});
+        }
+
+        //Handling Error and Rejection
+             function showErr(error) {
+              switch(error.code){
+              case error.PERMISSION_DENIED:
+             alert("User denied the request for Geolocation API.");
+              break;
+             case error.POSITION_UNAVAILABLE:
+             alert("USer location information is unavailable.");
+            break;
+            case error.TIMEOUT:
+            alert("The request to get user location timed out.");
+            break;
+           case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.");
+            break;
+           }
+        }        
+        </script>
+
+
+</head>
+
+<body>
+
+<form>
+  <h2>Form</h2>
+  <input type="text" placeholder="Name" required><br>
+  <input type="email" placeholder="Email" required><br>
+  <input type="tel" placeholder="Mobile no" required><br>
+  <label>Select date and time for appointment:</label>
+  <input type="datetime-local" required><br>
+  <button type="submit">Submit</button><br>
+
+</form>
+
+<br><br>
+<h3>Video</h3>
+<video src = "movie.mp4"  width = "300" height = "200" controls>
+   Your browser does not support the video element.   
+</video>
+
+<h3>Music</h3>
+<audio controls>
+<source src="./drop-it-124014.mp3" type="audio/mp3">
+Your browser does not support the audio element
+</audio>
+
+<h3>Canvas</h3>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #290e0e;">
+</canvas>
+
+</body> 
+</html>
