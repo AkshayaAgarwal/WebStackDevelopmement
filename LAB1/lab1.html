@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<! Submitted by Akshaya agarwal (2247207)
+1. Text formatting
+2. Links (3 links)
+3.Images (3 images)
+4.Image Map ( meaning ful image map using all area)
+5. Lists (all types)
+6. Tables  (rowspan, col span to be utilised)
+7. Forms ( 5 input types to be used)
+>
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LAB1</title>
+	<style>
+		table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+		
+	</style>
+
+</head>
+<body style="background-color:rgb(226, 158, 158); font-family: times;">
+
+<! TEXT FORMATTING>
+
+
+<! LINKS>
+
+<a href="https://www.google.com/" target="_blank">GOOGLE LINK</a> <br>
+<a href="https://www.amazon.in/" target="_blank">AMAZON LINK</a><br>
+<a href="https://www.amazon.in/stores/YuckqueeSkinstickers/page/63AB4403-D79E-4DF5-809C-296600FB68EC?ref_=ast_bln"  target="_blank">SHOPPING LINK</a><br><br>
+
+
+<! IMAGES>
+<img src="img1.jpg" style="width:450px;height:600px;"> 
+<img src="img2.jpg" style="width:450px;height:600px;"> 
+<img src="img3.jpg" alt="Workplace" usemap="#img3" style="width:400px;height:650px;"> <br>
+
+<! IMAGE MAP>
+
+	<map name="img3">
+	  <area shape="default" <a href="https://culturetourist.com/" target="_blank"> </a>>
+	</map> 
+	<map name="img2">
+	  <area shape="default" <a href="https://hilltourism.org/"  target="_blank"> </a>>
+	</map> 
+	<map name="img1">
+	  <area shape="default" <a href="https://www.holidify.com/country/india/places-to-visit.html?__cf_chl_tk=zepbrJ1VHFgmmgwpZw4lAZsu4z2lQTz2gShlL.aq2zg-1667622104-0-gaNycGzNCaU" target="_blank"> </a>>
+	</map> 
+
+
+<! LISTS>
+<h4>An unordered list</h4>
+      <ul>
+         <li>Papaya</li>
+         <li>Orange</li>
+         <li>Mango</li>
+         <li>Guava</li>
+         <li>Grapes</li>
+      </ul>
+
+
+<h4>An ordered list</h4>
+      <ol>
+         <li>Papaya</li>
+         <li>Orange</li>
+         <li>Mango</li>
+         <li>Guava</li>
+         <li>Grapes</li>
+      </ol>
+
+<h4>A description list</h4>
+      <dl>
+         <dt><b>Apple</b></dt>
+         <dd>A red colored fruit</dd>
+         <dt><b>Landscape</b></dt>
+         <dd>A beautiful nature photo </dd>
+         <dt><b>Tourism</b></dt>
+         <dd>A tourist desitination</dd>
+      </dl>
+
+<h4>A mixed nested list</h4>
+ <ol>
+        <li>Fruits</li>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Orange</li>
+        </ul>
+        <li>Vegetables</li>
+        <ul>
+            <li>Spinach</li>
+            <li>Cauliflower</li>
+            <li>Beetroot</li>
+        </ul>
+        <li>Cereals</li>
+        <li>Nuts</li>
+    </ol>
+
+<! TABLES>
+
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Cena</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Micheal</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+<br>
+<br> 
+<br> 
+
+
+<! FORMS>
+
+<form>  
+    <label for="ename">NAME: 	</label>  
+    <input type="text" id="name" name="name"/> <br/>
+    <label for="email">EMAIL: 	</label>  
+    <input type="email" id="email" name="email"/> <br/>  
+    <label for="password">PASSWORD:</label>  
+    <input type="password" id="password" name="password"/> <br/>  
+    <label for="gender">Gender: </label>  
+              <input type="radio" id="gender" name="gender" value="male">Male  
+              <input type="radio" id="gender" name="gender" value="female">Female
+              <input type="radio" id="gender" name="gender" value="other">Other <br/>  
+    		  
+    <p>PROFICIENCY</p>
+    <input type="checkbox">  
+    <label for="C++">C++</label> <br>  
+    <input type="checkbox">  
+    <label for="PYTHON">Python</label> <br>  
+    <input type="checkbox">  
+	<label for="NIL">NEITHER</label>
+</form> 
+
+
+
+
+
+
+
+
+</body>
+</html>
